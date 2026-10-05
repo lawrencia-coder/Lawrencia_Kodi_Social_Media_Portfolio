@@ -7,3 +7,21 @@
 .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stat{padding:22px;border-top:2px solid var(--burgundy)}.stat strong{display:block;font:700 2rem var(--serif)}.stat span{font-size:.86rem;color:var(--muted)}.timeline{border-left:1px solid var(--line);padding-left:28px}.timeline-item{margin-bottom:30px;position:relative}.timeline-item:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--burgundy);left:-34px;top:7px}.timeline-item strong{display:block}.timeline-item span{color:var(--muted);font-size:.9rem}.page-hero{padding:72px 0 45px;background:var(--soft)}.page-hero p{max-width:700px;color:var(--muted);font-size:1.1rem}.form{display:grid;gap:14px}input,textarea,select{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;font:inherit;background:#fff}textarea{min-height:150px;resize:vertical}footer{padding:42px 0;border-top:1px solid var(--line)}.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.socials{display:flex;gap:10px;flex-wrap:wrap}.socials a{padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-size:.84rem}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;background:#1f8b4c;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.15)}
 @media(max-width:850px){.navlinks,.navcta{display:none}.menu{display:block}.hero{padding-top:55px}.hero-grid{grid-template-columns:1fr}.portrait{min-height:380px;max-width:520px;margin:auto;width:100%}.grid-3,.grid-2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.section{padding:65px 0}.section-head{display:block}.section-head p{margin-top:16px}}
 @media(max-width:500px){h1{font-size:3.25rem}.stats{grid-template-columns:1fr}.actions .btn{width:100%}}
+.portrait {
+    position: relative;
+    overflow: hidden;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.portrait-copy {
+    position: absolute;
+    bottom: 24px;
+    z-index: 2;
+}
